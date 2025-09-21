@@ -850,7 +850,9 @@ frontend http
 $(if [[ ${config[security]} == 'letsencrypt' ]]; then echo "
   use_backend certbot if { path_beg /.well-known/acme-challenge }
   acl letsencrypt-acl path_beg /.well-known/acme-challenge
-  redirect scheme https if !letsencrypt-acl
+  # Commented out because this interferes with the domain check
+  # performed before certbot is invoked (see certbot/startup.sh)
+  # redirect scheme https if !letsencrypt-acl
 "; fi)
   use_backend default
 frontend tls
