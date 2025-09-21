@@ -52,11 +52,7 @@ You can start using this script with default configuration by copy and paste the
 
 This command will configure `sing-box` with `reality` security protocol over `tcp` transport protocol on port `443` for `www.google.com` SNI domain by default:
 ```
-bash <(curl -sL https://bit.ly/realityez)
-```
-or (if the above command dosen't work):
-```
-bash <(curl -sL https://raw.githubusercontent.com/aleskxyz/reality-ezpz/master/reality-ezpz.sh)
+bash <(curl -sL https://raw.githubusercontent.com/necto/reality-ezpz/master/reality-ezpz.sh)
 ```
 After a while you will get configuration string and QR code:
 ![image](https://user-images.githubusercontent.com/39186039/232563871-0140e10a-22b4-4653-9bc9-cdba519a8b41.png)
