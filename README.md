@@ -50,9 +50,11 @@ Supported OS:
 ## Quick Start
 You can start using this script with default configuration by copy and paste the line below in terminal.
 
-This command will configure `sing-box` with `reality` security protocol over `tcp` transport protocol on port `443` for `www.google.com` SNI domain by default:
+This command will configure `Xray` with `TLS` security protocol over `tcp` transport protocol on port `443` for `www.google.com` SNI domain by default:
 ```
-bash <(curl -sL https://raw.githubusercontent.com/necto/reality-ezpz/master/reality-ezpz.sh)
+sudo su
+curl -o reality-ezpz.sh https://raw.githubusercontent.com/necto/reality-ezpz/master/reality-ezpz.sh
+bash reality-ezpz.sh --server <your-domain> --core xray --security letsencrypt
 ```
 After a while you will get configuration string and QR code:
 ![image](https://user-images.githubusercontent.com/39186039/232563871-0140e10a-22b4-4653-9bc9-cdba519a8b41.png)
